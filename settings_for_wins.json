@@ -1,0 +1,152 @@
+{
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac \"$fileName\" && java \"$fileNameWithoutExt\"",
+        "c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "cpp": "cd $dir && g++ -O2 -std=c++11 \"$fileName\"  -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "objective-c": "cd $dir && gcc -framework Cocoa \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "php": "php",
+        "python": "python3 -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "cd $dir && go run \"$fileName\"",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run \"$fileNameWithoutExt\"",
+        "rust": "cd $dir && rustc \"$fileName\" && & \"$dir$fileNameWithoutExt\"",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc \"$fileName\" && & \"$dir$fileNameWithoutExt\"",
+        "d": "cd $dir && dmd \"$fileName\" && & \"$dir$fileNameWithoutExt\"",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc \"$fileName\" \"$fileNameWithoutExt.css\"",
+        "FortranFreeForm": "cd $dir && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "fortran-modern": "cd $dir && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && & \"dir$fileNameWithoutExt\"",
+        "fortran_fixed-form": "cd $dir && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "fortran": "cd $dir && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\""
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}"
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex->bibtex->exlatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.startupEditor": "none",
+    "editor.inlineSuggest.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDelete": false,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": true,
+        "javascript": false
+    },
+    "cph.general.ignoreSTDERROR": true,
+    "cph.language.cpp.SubmissionCompiler": "GNU G++11 5.1.0",
+    "cph.general.defaultLanguageTemplateFileLocation": "<My-CPP-Template-File>",
+    "git.enableSmartCommit": true,
+    "jupyter.askForKernelRestart": false,
+    "emulator.emulatorPathWindows": "<Android-SDK-Emulator-Path>",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "files.associations": {
+        "*.tex": "latex"
+    },
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hant": true
+    },
+    "background.customImages": [
+        "file:///<PATH-TO-CUSTOM-BACKGROUND-IMAGE>"
+    ],
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "100%",
+        "height": "100%",
+        "background-position": "center",
+        "background-repeat": "no-repeat",
+        "opacity": 0.1
+    },
+    "background.useDefault": false,
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 110, SpacesBeforeTrailingComments: 1}",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
+}

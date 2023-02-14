@@ -1,0 +1,9 @@
+{
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "cpp": "cd $dir && g++ -O2 -std=c++11 \"$fileName\"  -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\""
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "C_Cpp.default.compilerPath": "設為編譯器路徑\\bin\\g++.exe"
+}

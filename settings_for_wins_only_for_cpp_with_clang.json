@@ -1,0 +1,14 @@
+{
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\"",
+        "cpp": "cd $dir && g++ -O2 -std=c++11 \"$fileName\"  -o \"$fileNameWithoutExt\" && & \"$dir$fileNameWithoutExt\""
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "C_Cpp.default.compilerPath": "設為編譯器路徑\\bin\\g++.exe",
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 110, SpacesBeforeTrailingComments: 1}",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
+}
