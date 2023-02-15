@@ -32,7 +32,7 @@ Dart support and debugger for VSC.
 - [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 - [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 - [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-AI-powered coding assistant.(Non-free)
+AI-powered coding assistant.(Fee required)
 - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Go](https://marketplace.visualstudio.com/items?itemName=golang.go)
 - [Grandle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle)
